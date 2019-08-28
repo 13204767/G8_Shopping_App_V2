@@ -23,15 +23,13 @@ public class ActivityHome extends Fragment implements OnItemClickListener {
 		View v = inflater.inflate(R.layout.fragment_list, container, false);
 
 		gridview = (GridView) v.findViewById(R.id.gridView1);
-		gridview.setOnItemClickListener(this);
 
-		data.add(new GridViewItem("All Products", getResources().getDrawable(R.drawable.ic_product)));
-		data.add(new GridViewItem("Branches", getResources().getDrawable(R.drawable.ic_info)));
+		data.add(new GridViewItem("Branches", getResources().getDrawable(R.drawable.ic_product)));
+		data.add(new GridViewItem("All Products", getResources().getDrawable(R.drawable.ic_info)));
 		data.add(new GridViewItem(getResources().getString(R.string.menu_cart), getResources().getDrawable(R.drawable.ic_cart)));
 		data.add(new GridViewItem(getResources().getString(R.string.menu_checkout), getResources().getDrawable(R.drawable.ic_checkout)));
-		data.add(new GridViewItem("About Me", getResources().getDrawable(R.drawable.ic_profile)));
+		data.add(new GridViewItem("My Details", getResources().getDrawable(R.drawable.ic_profile)));
 		data.add(new GridViewItem(getResources().getString(R.string.menu_contact), getResources().getDrawable(R.drawable.ic_contact)));
-		data.add(new GridViewItem("G8", getResources().getDrawable(R.drawable.ic_about)));
 
 
 		setDataAdapter();
@@ -46,6 +44,7 @@ public class ActivityHome extends Fragment implements OnItemClickListener {
 	}
 
 	@Override
+
 	public void onItemClick(final AdapterView<?> arg0, final View view, final int position, final long id) {
 		if (position==0){
 			startActivity(new Intent(getActivity(), ActivityCategoryList.class));
@@ -86,3 +85,6 @@ public class ActivityHome extends Fragment implements OnItemClickListener {
 	}
 
 }
+/*
+		gridview.setOnItemClickListener(this);
+*/

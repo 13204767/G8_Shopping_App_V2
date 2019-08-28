@@ -62,8 +62,8 @@
 	<string name="app_info">App Info</string>
 	<string name="main_menu">Main Menu</string>
 	<string name="title_activity_home">Home</string>
-	<string name="more">More Apps</string>
-	<string name="rate">Rate Apps</string>
+	<string name="more">Log-In</string>
+	<string name="rate">Register</string>
 	<string-array name="main_menu_list">
         <item >List Menu</item>
         <item >Your Order</item>

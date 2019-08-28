@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="header">#ff5722</color>
+    <color name="header">#4285F4</color>
     
     <color name="text">#ffffff</color>
     <color name="shadow">#505050</color>
